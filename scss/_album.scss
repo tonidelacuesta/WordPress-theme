@@ -1,0 +1,30 @@
+
+.album {
+    margin-top:1rem;
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+    'foto2'
+    'foto3'
+    'foto4'
+    'foto5'
+    'cita'
+    ;
+  
+  }
+  
+@media only screen and (min-width: 576px) {
+    .album{
+        margin-top: 1rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:    1.5fr 1.5fr;
+        gap: 1rem;
+        grid-template-areas: 
+        'foto2 foto3 foto4 foto5'
+        'foto2 cita cita foto5';
+            
+    }
+}

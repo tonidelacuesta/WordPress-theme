@@ -1,0 +1,27 @@
+
+@import "./variables";
+
+.banner{
+    display:none;
+  }
+  @media (min-width: 576px) {
+    .banner{
+        display:block;
+        margin-left:18rem;
+        margin-top:10rem;
+        .mi-card{
+            font-family:anton;
+            h3{
+                
+                text-transform: uppercase;
+                font-size: 4em;
+            }
+        }
+        .card-body{
+            .card-link{
+                padding:.7rem 2.3rem;
+                color:dimgray;
+            }
+        }
+    }
+}

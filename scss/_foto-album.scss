@@ -1,0 +1,32 @@
+
+  .foto2{
+    grid-area:foto2;
+    background: url(../src/img/hat.JPG);
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .foto3 {
+    grid-area: foto3;
+    background: url(../src/img/padres.JPG);
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .foto4 {
+    grid-area: foto4; 
+    background: url(../src/img/playa.JPG);
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .foto5 {
+    grid-area: foto5; 
+    background: url(../src/img/risas.JPG);
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

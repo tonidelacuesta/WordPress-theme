@@ -1,0 +1,26 @@
+.cita{
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  
+}
+.cita{
+    grid-area:cita;
+    p{
+        font-weight: 600;
+    }
+    .autor{
+        margin-left: 0.3em;
+        font-size:1.2rem;
+        color:dimgrey;
+    }
+    .lead{
+        font-size:1.8rem;
+    }
+    .dots{
+        font-size: x-small;
+        margin-top:7px;
+        color:dimgrey;
+    }
+}

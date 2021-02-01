@@ -1,0 +1,20 @@
+
+@import "../scss/variables";
+//codigo html 
+
+// <div class="container-fluid separador d-flex flex-column-reverse text-center">
+//     <h1>últimos artículos</h1>
+// </div>
+
+
+.separador{
+    
+    min-height: 10rem;
+    background-color:$bg-light;
+    color:$white;
+    padding-bottom:0.5em;
+    h1{
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}

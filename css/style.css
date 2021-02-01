@@ -1,0 +1,184 @@
+.cita {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+
+.cita {
+  grid-area: cita;
+}
+.cita p {
+  font-weight: 600;
+}
+.cita .autor {
+  margin-left: 0.3em;
+  font-size: 1.2rem;
+  color: dimgrey;
+}
+.cita .lead {
+  font-size: 1.8rem;
+}
+.cita .dots {
+  font-size: x-small;
+  margin-top: 7px;
+  color: dimgrey;
+}
+
+.header {
+  background: url("../src/img/arbol_azul.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    height: 100vh;
+  }
+}
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+}
+.banner {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .banner {
+    display: block;
+    margin-left: 18rem;
+    margin-top: 10rem;
+  }
+  .banner .mi-card {
+    font-family: anton;
+  }
+  .banner .mi-card h3 {
+    text-transform: uppercase;
+    font-size: 4em;
+  }
+  .banner .card-body .card-link {
+    padding: 0.7rem 2.3rem;
+    color: dimgray;
+  }
+}
+.album {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "foto2" "foto3" "foto4" "foto5" "cita";
+}
+
+@media only screen and (min-width: 576px) {
+  .album {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    gap: 1rem;
+    grid-template-areas: "foto2 foto3 foto4 foto5" "foto2 cita cita foto5";
+  }
+}
+.foto2 {
+  grid-area: foto2;
+  background: url(../src/img/hat.JPG);
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto3 {
+  grid-area: foto3;
+  background: url(../src/img/padres.JPG);
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto4 {
+  grid-area: foto4;
+  background: url(../src/img/playa.JPG);
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto5 {
+  grid-area: foto5;
+  background: url(../src/img/risas.JPG);
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fichas {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  grid-template-areas: "ficha1" "ficha2" "ficha3" "ficha4" "ficha5" "ficha6";
+}
+
+@media only screen and (min-width: 576px) {
+  .fichas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: ". ficha1 ficha2 ficha3 ." ". ficha4 ficha5 ficha6 .";
+  }
+}
+.ficha1 {
+  grid-area: ficha1;
+}
+
+.ficha2 {
+  grid-area: ficha2;
+}
+
+.ficha3 {
+  grid-area: ficha3;
+}
+
+.ficha4 {
+  grid-area: ficha4;
+}
+
+.ficha5 {
+  grid-area: ficha5;
+}
+
+.ficha6 {
+  grid-area: ficha6;
+}
+
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+}
+.separador {
+  min-height: 10rem;
+  background-color: #acb7bd;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+.separador h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+footer {
+  height: 200px;
+}
+
+.panal {
+  background-image: url(../src/img/panal.JPG);
+  min-height: 10rem;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

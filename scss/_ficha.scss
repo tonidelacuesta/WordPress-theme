@@ -1,0 +1,45 @@
+.fichas{
+    margin-top:2rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:1rem;
+    grid-template-areas: 
+    'ficha1'
+    'ficha2'
+    'ficha3'
+    'ficha4'
+    'ficha5'
+    'ficha6';
+}
+
+@media only screen and (min-width: 576px) {
+    .fichas{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:1rem;
+        grid-template-areas: 
+        '. ficha1 ficha2 ficha3 .'
+        '. ficha4 ficha5 ficha6 .';
+    }
+}
+.ficha1{
+    grid-area: ficha1;
+}
+.ficha2{
+    grid-area: ficha2;
+}
+.ficha3{
+    grid-area: ficha3;
+}
+.ficha4{
+    grid-area: ficha4;
+}
+.ficha5{
+    grid-area: ficha5;
+}
+.ficha6{
+    grid-area: ficha6;
+}
+

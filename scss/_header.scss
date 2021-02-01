@@ -1,0 +1,14 @@
+.header{
+    background: url('../src/img/arbol_azul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+@media only screen and (min-width: 576px) {
+
+    
+    .header{
+      height:100vh;
+    }
+}    
