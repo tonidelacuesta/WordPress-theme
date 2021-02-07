@@ -1,0 +1,28 @@
+@import "variables";
+
+
+.luminoso{
+    i, span{
+        color:$luminoso-light-off;
+    }
+    animation: lighting 2s linear infinite;
+}
+
+@keyframes lighting{
+    
+    0%{
+        color:$luminoso-light-off;
+        text-shadow: none;
+    }
+
+
+    90%{
+        color:$luminoso-light-off;
+        text-shadow: none
+    }
+
+    100%{
+        color:$luminoso-light-on;
+        text-shadow:0 0 7px $luminoso-light-on, 0 0 50px $luminoso-shadow;
+    }
+}

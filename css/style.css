@@ -171,14 +171,95 @@
   margin-bottom: 0;
 }
 
-footer {
-  height: 200px;
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+}
+.footer {
+  padding: 10rem 20rem;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "signup signup social social" "about productos clientes informacion";
+}
+.footer .sign-up {
+  grid-area: signup;
+}
+.footer .social {
+  grid-area: social;
+}
+.footer .social i {
+  margin-left: 2rem;
+}
+.footer .about {
+  grid-area: about;
+}
+.footer .productos {
+  grid-area: productos;
+}
+.footer .clientes {
+  grid-area: clientes;
+}
+.footer .informacion {
+  grid-area: informacion;
+}
+.footer i {
+  color: #e20048;
+  font-size: 1.2em;
+}
+.footer ul {
+  padding-left: 0;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .panal {
   background-image: url(../src/img/panal.JPG);
   min-height: 10rem;
   margin-top: 2rem;
+}
+
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+}
+.btn-pink {
+  background-color: #e20048;
+  color: #fff;
+  border-radius: 3em;
+}
+
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+}
+.luminoso {
+  animation: lighting 2s linear infinite;
+}
+.luminoso i, .luminoso span {
+  color: #484848;
+}
+
+@keyframes lighting {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

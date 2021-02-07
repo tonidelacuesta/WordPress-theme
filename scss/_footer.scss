@@ -1,3 +1,56 @@
-footer{
-    height: 200px;
+@import "./variables";
+
+.footer{
+    padding:10rem 20rem;
+    min-height: 200px;
+    
+    // display grid
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:1rem;
+        grid-template-areas: 
+        'signup signup social social'
+        'about productos clientes informacion';
+        
+    .sign-up{
+        grid-area:signup;
+    }
+
+    .social{
+        grid-area: social;
+
+        i{
+            margin-left: 2rem;
+        }
+    }
+    .about{
+        grid-area: about;
+    }
+    .productos{
+        grid-area: productos;
+    }
+    .clientes{
+        grid-area: clientes;
+    }
+    .informacion{
+        grid-area:informacion;
+    }
+
+    i{
+        color:$boton-rosa-footer;
+        font-size: 1.2em;
+    }
+
+    ul{
+        padding-left: 0;
+    }
+    ul li{
+        list-style:none;
+    }
+    ul li a{
+        color:$white;
+        text-decoration: none;
+    }
+ 
 }
