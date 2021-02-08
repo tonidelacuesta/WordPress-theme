@@ -4,8 +4,9 @@
 .luminoso{
     i, span{
         color:$luminoso-light-off;
+        animation: lighting 1.4s linear infinite;
     }
-    animation: lighting 2s linear infinite;
+    
 }
 
 @keyframes lighting{
@@ -14,7 +15,10 @@
         color:$luminoso-light-off;
         text-shadow: none;
     }
-
+    80%{
+        color:$luminoso-light-on;
+        text-shadow:0 0 7px $luminoso-light-on, 0 0 50px $luminoso-shadow;
+    }
 
     90%{
         color:$luminoso-light-off;

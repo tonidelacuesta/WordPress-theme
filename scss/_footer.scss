@@ -1,27 +1,31 @@
 @import "./variables";
 
 .footer{
-    padding:10rem 20rem;
+    padding:5rem 12rem;
     min-height: 200px;
     
     // display grid
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap:1rem;
+        grid-template-rows: 1fr 0.5fr 1fr;
+        // gap:1rem;
         grid-template-areas: 
         'signup signup social social'
+        '. . . . '
         'about productos clientes informacion';
         
     .sign-up{
         grid-area:signup;
+    }
+    .luminoso{
+        grid-area:luminoso;
     }
 
     .social{
         grid-area: social;
 
         i{
-            margin-left: 2rem;
+            margin-left: 1rem;
         }
     }
     .about{
@@ -47,10 +51,27 @@
     }
     ul li{
         list-style:none;
+        line-height: 1.5rem;
+    }
+    ul li:hover a{
+        color:$boton-rosa-footer;
     }
     ul li a{
         color:$white;
         text-decoration: none;
+        font-size:0.8rem;
     }
- 
+    #followus{
+        font-family: nanum;
+        font-size: 1.2em;
+        margin-left:0.5rem;
+    }
+    #bulb{
+        display:inline-block;
+        position:relative;
+        font-size:2rem;
+        top:3px;
+        transform: rotate(-20deg);
+    }
+  
 }

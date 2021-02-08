@@ -40,6 +40,8 @@
 @font-face {
   font-family: anton;
   src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+  font-family: nanum;
+  src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 }
 .banner {
   display: none;
@@ -159,6 +161,8 @@
 @font-face {
   font-family: anton;
   src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+  font-family: nanum;
+  src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 }
 .separador {
   min-height: 10rem;
@@ -174,24 +178,28 @@
 @font-face {
   font-family: anton;
   src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+  font-family: nanum;
+  src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 }
 .footer {
-  padding: 10rem 20rem;
+  padding: 5rem 12rem;
   min-height: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-  grid-template-areas: "signup signup social social" "about productos clientes informacion";
+  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-areas: "signup signup social social" ". . . . " "about productos clientes informacion";
 }
 .footer .sign-up {
   grid-area: signup;
+}
+.footer .luminoso {
+  grid-area: luminoso;
 }
 .footer .social {
   grid-area: social;
 }
 .footer .social i {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .footer .about {
   grid-area: about;
@@ -214,10 +222,27 @@
 }
 .footer ul li {
   list-style: none;
+  line-height: 1.5rem;
+}
+.footer ul li:hover a {
+  color: #e20048;
 }
 .footer ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 0.8rem;
+}
+.footer #followus {
+  font-family: nanum;
+  font-size: 1.2em;
+  margin-left: 0.5rem;
+}
+.footer #bulb {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  top: 3px;
+  transform: rotate(-20deg);
 }
 
 .panal {
@@ -229,6 +254,8 @@
 @font-face {
   font-family: anton;
   src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+  font-family: nanum;
+  src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 }
 .btn-pink {
   background-color: #e20048;
@@ -239,18 +266,22 @@
 @font-face {
   font-family: anton;
   src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
-}
-.luminoso {
-  animation: lighting 2s linear infinite;
+  font-family: nanum;
+  src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 }
 .luminoso i, .luminoso span {
   color: #484848;
+  animation: lighting 1.4s linear infinite;
 }
 
 @keyframes lighting {
   0% {
     color: #484848;
     text-shadow: none;
+  }
+  80% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
   }
   90% {
     color: #484848;

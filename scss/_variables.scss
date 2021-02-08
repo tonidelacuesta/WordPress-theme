@@ -17,7 +17,12 @@ $luminoso-shadow:$Blaze-orange;
 
 //fonts
 @font-face{
+    //fuente header
     font-family: anton;
     src: url(../src/assets/fonts/Anton/Anton-Regular.ttf);
+
+    //fuente luminoso footer
+    font-family: nanum;
+    src: url(../src/assets/fonts/NanumPenScript/NanumPenScript-Regular.ttf);
 
 }
